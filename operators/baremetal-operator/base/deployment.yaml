@@ -64,7 +64,7 @@ spec:
           envFrom:
             - configMapRef:
                 name: baremetal-operator-ironic
-          image: quay.io/metal3-io/baremetal-operator:latest
+          image: quay.io/metal3-io/baremetal-operator:capm3-v1.1.1
           args:
             - '--metrics-addr=127.0.0.1:8085'
             - '--enable-leader-election'
