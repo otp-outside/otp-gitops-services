@@ -6,10 +6,8 @@ metadata:
  namespace: metal-provisioner
 rules:
   - apiGroups: 
-      - security.openshift.io
+      - 'security.openshift.io'
     resources: 
       - securitycontextconstraints
-    resourceNames:
-      - privileged
     verbs:
-      - use
+      - '*'
