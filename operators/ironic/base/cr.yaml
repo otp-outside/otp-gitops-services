@@ -12,10 +12,10 @@ rules:
     resourceNames:
       - 'privileged'
     verbs:
-      - 'use'
+      - '*'
   - verbs:
       - '*'
     apiGroups:
       - 'route.openshift.io'
     resources:
-      - routes
+      - '*'

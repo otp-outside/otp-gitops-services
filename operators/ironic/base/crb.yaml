@@ -10,5 +10,5 @@ roleRef:
   name: ironic-scc
 subjects:
 - kind: ServiceAccount
-  name: metal-provisioner
+  name: ironic
   namespace: metal-provisioner
