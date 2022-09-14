@@ -129,5 +129,5 @@ spec:
       volumes:
         - name: ironic-data-volume
           emptyDir: {}
-      serviceAccount: metal-provisioner
-      serviceAccountName: metal-provisioner
+      serviceAccount: ironic
+      serviceAccountName: ironic
