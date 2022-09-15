@@ -10,7 +10,7 @@ data:
   RESTART_CONTAINER_CERTIFICATE_UPDATED: 'false'
   INSPECTOR_REVERSE_PROXY_SETUP: 'false'
   PROVISIONING_INTERFACE: eth0 # this is the interface on the host node - as Ironic is provide hostnetwork privilege, it will look for this interface to get its IP. Make sure it to update as per your environment.
-  PROVISIONING_IP: '10.245.64.35'
+  PROVISIONING_IP: '10.245.128.20'
   IRONIC_INSPECTOR_URL: ironic-inspector-metal-provisioner.rhacm-hub-fringe-sat-b95ece5a8e5f8f2343b2871be9bb6524-0000.au-syd.containers.appdomain.cloud
   IRONIC_KERNEL_PARAMS: console=ttyS0
   IRONIC_API_URL: ironic-api-metal-provisioner.rhacm-hub-fringe-sat-b95ece5a8e5f8f2343b2871be9bb6524-0000.au-syd.containers.appdomain.cloud
