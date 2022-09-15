@@ -16,6 +16,8 @@ spec:
       labels:
         control-plane: controller-manager
     spec:
+      nodeSelector:
+         bmo: node
       volumes:
         - name: ironic-credentials
           secret:
