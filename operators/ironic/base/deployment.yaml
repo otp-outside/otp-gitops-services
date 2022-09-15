@@ -201,3 +201,5 @@ spec:
       volumes:
         - name: ironic-data-volume
           emptyDir: {}
+      serviceAccount: ironic
+      serviceAccountName: ironic
