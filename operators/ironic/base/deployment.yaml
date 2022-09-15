@@ -17,6 +17,8 @@ spec:
       labels:
         name: ironic
     spec:
+      nodeSelector:
+         ironic: node
       hostNetwork: true
       containers:
         - name: ironic-dnsmasq
@@ -203,8 +205,3 @@ spec:
           emptyDir: {}
       serviceAccount: ironic
       serviceAccountName: ironic
-      tolerations:
-      - effect: NoSchedule
-        key: ironic
-        operator: Equal
-        value: node
