@@ -22,7 +22,7 @@ data:
   IRONIC_URL_HOST: ironic-http-metal-provisioner.rhacm-hub-fringe-sat-b95ece5a8e5f8f2343b2871be9bb6524-0000.au-syd.containers.appdomain.cloud
   HTTP_PORT: '6180'
   IRONIC_INSPECTOR_ENDPOINT: ironic-inspector-metal-provisioner.rhacm-hub-fringe-sat-b95ece5a8e5f8f2343b2871be9bb6524-0000.au-syd.containers.appdomain.cloud/v1/
-  IRONIC_USE_MARIADB: true
+  IRONIC_USE_MARIADB: 'true'
 ---
 kind: ConfigMap
 apiVersion: v1
