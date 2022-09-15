@@ -203,3 +203,8 @@ spec:
           emptyDir: {}
       serviceAccount: ironic
       serviceAccountName: ironic
+      tolerations:
+      - effect: NoSchedule
+        key: ironic
+        operator: Equal
+        value: node
