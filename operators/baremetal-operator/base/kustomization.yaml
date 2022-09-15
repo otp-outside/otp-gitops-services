@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: metal-provisioner
 
 resources:
+  - crd.yaml
   - configmap.yaml
   - cr.yaml
   - crb.yaml
