@@ -20,7 +20,7 @@ spec:
             - /bin/bash
             - -c
             - |
-              echo "Patching Provisioning Resource to allo the Bare Metal Operator to watch ALL namespaces"
+              echo "Patching Provisioning Resource to allow the Bare Metal Operator to watch ALL namespaces"
               oc patch provisioning provisioning-configuration \
                   --type merge -p '{"spec":{"watchAllNamespaces": true }}'
               exit 0
