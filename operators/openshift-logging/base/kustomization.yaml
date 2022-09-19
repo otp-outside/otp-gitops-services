@@ -5,6 +5,10 @@ kind: Kustomization
 namespace: openshift-logging
 
 resources:
-  - namespace.yaml
   - operatorgroup.yaml
-  - subscription.yaml
+  - elasticsearch.yaml
+  - logging-operatorgroup.yaml
+  - openshift-logging.yaml
+  # - namespace.yaml
+  # - operatorgroup.yaml
+  # - subscription.yaml
