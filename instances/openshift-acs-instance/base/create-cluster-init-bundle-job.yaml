@@ -26,7 +26,7 @@ spec:
               else
                 # Wait for central to be ready
                 attempt_counter=0
-                max_attempts=20
+                max_attempts=30
                 echo "Waiting for central to be available..."
                 until $(curl -k --output /dev/null --silent --head --fail https://central); do
                     if [ ${attempt_counter} -eq ${max_attempts} ];then
