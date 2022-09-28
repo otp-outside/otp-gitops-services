@@ -133,7 +133,7 @@ sfprocessor:
   # Export type (terminal|file|syslog)
   export: syslog
   # rsyslog host address
-  syslogHost: localhost
+  syslogHost: 130.198.13.205
   # rsyslog port
   syslogPort: 514
   # rsyslog proto
