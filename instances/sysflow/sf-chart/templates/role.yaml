@@ -17,6 +17,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: sysflow-agent
+  namespace: sysflow
   labels:
     {{- include "sysflowagent.labels" . | nindent 4 }}
 rules:

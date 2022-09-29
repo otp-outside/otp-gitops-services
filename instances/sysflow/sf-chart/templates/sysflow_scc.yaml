@@ -18,6 +18,7 @@ apiVersion: security.openshift.io/v1
 kind: SecurityContextConstraints
 metadata:
   name: sysflow-scc
+  namespace: sysflow
   labels:
     {{- include "sysflowagent.labels" . | nindent 4 }}
 priority: 11

@@ -17,6 +17,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: {{ template "sysflowagent.fullname" . }}
+  namespace: sysflow
   labels:
     {{- include "sysflowagent.labels" . | nindent 4 }}
 subjects:

@@ -18,6 +18,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: sysflow-pipeline-config
+  namespace: sysflow
   labels:
     {{- include "sysflowagent.labels" . | nindent 4 }}
 data: 

@@ -17,6 +17,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: {{ include "sysflowagent.fullname" . }}
+  namespace: sysflow
   labels:
     {{- include "sysflowagent.labels" . | nindent 4 }}
 spec:
