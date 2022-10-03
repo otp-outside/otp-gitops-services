@@ -1,0 +1,20 @@
+apiVersion: platform.stackrox.io/v1alpha1
+kind: SecuredCluster
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "270"
+  name: old-macdonalds 
+spec:
+  clusterName: old-macdonalds 
+  auditLogs:
+    collection: Auto
+  centralEndpoint: central-rhacs-operator.rhacm-hub-fringe-sat-b95ece5a8e5f8f2343b2871be9bb6524-0000.au-syd.containers.appdomain.cloud:443
+  admissionControl:
+    listenOnCreates: false
+    listenOnEvents: true
+    listenOnUpdates: false
+  perNode:
+    collector:
+      collection: KernelModule
+      imageFlavor: Regular
+    taintToleration: TolerateTaints
