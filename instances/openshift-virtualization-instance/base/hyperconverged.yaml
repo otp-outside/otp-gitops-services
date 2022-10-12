@@ -3,7 +3,8 @@ kind: HyperConverged
 metadata:
   annotations:
     deployOVS: "false"
-    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "252"
+    helm.sh/hook-weight: "252"
   labels:
     app: kubevirt-hyperconverged
   name: kubevirt-hyperconverged
@@ -17,13 +18,8 @@ spec:
       duration: 24h0m0s
       renewBefore: 12h0m0s
   featureGates:
+    enableCommonBootImageImport: true
     sriovLiveMigration: false
     withHostPassthroughCPU: false
   infra: {}
-  liveMigrationConfig:
-    bandwidthPerMigration: 64Mi
-    completionTimeoutPerGiB: 800
-    parallelMigrationsPerCluster: 5
-    parallelOutboundMigrationsPerNode: 2
-    progressTimeout: 150
   workloads: {}
